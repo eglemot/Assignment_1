@@ -45,7 +45,7 @@ def popup():
 
 window = Tk()
 window.title("Password Generator")
-window.geometry("400x380")
+window.geometry("400x400")
 window.config(bg="#FCFFE7")
 var = IntVar()
 var1 = IntVar()
@@ -73,7 +73,7 @@ choose = Label(window, text="CHOOSE PASSWORD TYPE", font=looks, border=10, bg="#
 weak = Radiobutton(window, text="WEAK", variable=var, value=0, font=("Helvetica", 14), bg="#FCFFE7", fg="#2B3467")
 medium = Radiobutton(window, text="MEDIUM", variable=var, value=1, font=("Helvetica", 14), bg="#FCFFE7", fg="#2B3467")
 strong = Radiobutton(window, text="STRONG", variable=var, value=2, font=("Helvetica", 14), bg="#FCFFE7", fg="#2B3467")
-l_lenght = Label(window, text="CHOOSE LENGTH", font=("Helvetica", 14), border=5, bg="#FCFFE7", fg="#2B3467")
+l_lenght = Label(window, text="SELECT LENGTH", font=("Helvetica", 14), border=5, bg="#FCFFE7", fg="#2B3467")
 choose_lenght = ttk.Combobox(window, textvariable=var1, width=2)
 choose_lenght['values'] = (8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20, 21, 22, 23, 24, 25,26)
 choose_lenght.current(0)
